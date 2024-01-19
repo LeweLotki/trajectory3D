@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "stereo-vision-robot-navigation"
+version = "0.1.0"
+description = "A project for stereo vision-based depth estimation and robot trajectory planning."
+authors = ["Your Name <youremail@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+opencv-python = "^4.5.1"
+numpy = "^1.19.5"
+matplotlib = "^3.3.4"
+gpiozero = "^1.6.2"
+pathfinding = "^0.0.4"
+picamera = { version = "^1.13", platform = "linux" } # picamera is specific to Raspberry Pi and Linux
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
